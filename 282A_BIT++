@@ -1,0 +1,26 @@
+#include<iostream>
+#include<string>
+#include<bits/stdc++.h>
+#define max 100
+using namespace std;
+int main()
+{
+    int t,b;
+    int c=0;
+    string temp="";
+    cin >>t;
+    while(--t>=0)
+    {
+        cin>>temp;
+        if(temp[1]=='+')
+        {
+            ++c;
+        }
+        else
+        {
+            --c;
+        }
+    }
+    cout<<c;
+	return 0;
+}
