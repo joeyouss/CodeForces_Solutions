@@ -1,0 +1,13 @@
+import atexit, io, sys
+ 
+buffer = io.BytesIO()
+sys.stdout = buffer
+ 
+@atexit.register
+def write():
+    sys.__stdout__.write(buffer.getvalue())
+    
+N = int(raw_input())
+ 
+arr = [int(x) for x in raw_input().split()]
+ 
