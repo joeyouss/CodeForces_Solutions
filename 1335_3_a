@@ -1,0 +1,17 @@
+//Stars and bars algorithm using binary coefficient- putting n identical things into k boxes.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n;
+        cin>>n;
+        cout<<(n-1)/2<<endl;
+        
+    }
+    return 0;
+}
+//follow up- catalan numbers for creating rooted trees (permutation)
