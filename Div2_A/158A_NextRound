@@ -1,0 +1,41 @@
+#include<iostream>
+#include<string>
+#include<bits/stdc++.h>
+#define max 100
+using namespace std;
+int main()
+{
+    int t,i,k,a,b,c;
+    int p[max];
+    int sum=0;
+    cin >> t>>k;
+    for( i=0;i<t;i++)
+    {
+        cin>>p[i];
+    }
+    a=p[k-1];
+    if(p[k-1]!=0)
+    {
+        sum=k;
+        for(i=k;i<t;i++)
+        {
+            if(p[i]==a)
+                {
+                    sum++;
+                }
+        }
+  
+    }
+    else
+    {
+        for(i=0;i<k-1;i++)
+        {
+            if(p[i]!=0)
+            sum++;
+        }
+    }
+   
+    cout<<sum;
+	
+	return 0;
+}
